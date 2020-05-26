@@ -1,19 +1,19 @@
-/* Если эта чушь работает, её написал Alexandr Porechniy 
- * Если нет - то хз кто её написал
- */
+/* If this nonsense works, it was written by Alexandr Porechniy 
+ * If not , I don't know who wrote it
+*/
 
-Для корректной работы необходима БД, поднятая на локальном сервере.
-Соединение с бд осуществляется посредством натсройки файла ("data/config.js"),
-где необходимо указать адрес сервера БД, логин и пароль для доступа и имя подключаемой
-БД.
-После того как всё это будет выполнено:
-1) Открываем первое окно терминала и пишем "npm start"
-   Этой командой запустится бэкенд сервер, который отвечает
-   за коннект с БД и роутингом запросов. (по дефолту порт: 3000)
-2) В другом терминале (не закрывая первый), пишем "npm run wp"
-   Этой командой мы запускаем сервер фронта, а именно сборщик 
-   для JSX (соответсвенно и компилятор). (по дефолту порт: 9000)
-3) Если бэк настроен и не вызывает проблем - переходим по адресу
-   "localhost:9000" и в файле "src/components/App.js" делаем запрос 
-   к бэк-серверу (соот. адрес "http://localhost:3000")
-4) Если запрос прописан правильно - бэк сервер должен отдать данные 
+To work correctly, you need a database raised on the local server.
+The connection to the database is made by creating a file ("data/config.js"),
+where you need to specify the address of the DB server, login and password for access, and the name of the plug-in
+DB.
+After all this is done:
+1) Open the first terminal window and write "npm start"
+ This command starts the backend server that responds
+ for connecting to the database and routing requests. (default port: 3000)
+2) In another terminal (without closing the first one), write "npm run wp"
+ With this command, we start the front-end server, namely the mail collector 
+ for JSX (and the compiler, respectively). (default port: 9000)
+3) If the back is configured and does not cause problems-go to the address
+ "localhost:9000" and in the file " src/components/App.js " making a request 
+ to the back server (soot. address "http://localhost:3000")
+4) If the request is spelled correctly , the back server must
